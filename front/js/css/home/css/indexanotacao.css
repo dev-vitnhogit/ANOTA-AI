@@ -1,0 +1,107 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: coral;
+}
+
+/* CONTEUDO PRINCIPAL */
+#area-bloco{
+    position: relative;
+    height: 90vh;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* BOTÃO DE ADICIONAR BLOCOS*/
+#btn-addbloco{
+    position: absolute;
+    bottom: 30px;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 60px;
+    background-color:coral;
+    box-shadow: 1px 1px  10px black;
+}
+
+#area-input{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    background-color: coral;
+    right: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 1px 1px 16px black;
+    border-radius: 10px;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    z-index: 10;
+}
+
+/* INPUT DE TITULO DE BLOCO*/
+#input-titulo{
+    border: none;
+    padding: 5px 10px;
+    outline: none;
+    border-radius: 5px;
+    margin: 10px 0px;
+}
+
+/* BOTÃO DE CRIAR O BLOCO COM O TITULO*/
+#btn-criarbloco{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+#area-input > h2{
+    text-align: center;
+}
+
+/* CLASS DOS BLOCOS ADIONADA ATRAVES DO JAVASCRIPT */
+.bloco{
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    box-shadow: 1px 1px 16px black;
+    margin:0px 10px 10px 10px;
+    padding: 10px;
+}
+
+/* DIV ONDE OS BOTOES DOS BLOCOS ENTÃO */
+.area-btn{
+   position: relative; 
+}
+
+.btn-deletar{
+    border: none;
+    position: absolute;
+    right: 0px;
+    top: 120px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: red;
+}
+
+.btn-acessar{
+    border: none;
+    position: absolute;
+    right: 80px;
+    top: 120px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: green;
+}

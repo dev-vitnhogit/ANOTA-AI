@@ -1,0 +1,57 @@
+💡 Projeto ideal pro teu nível: Mini Sistema de Anotações com Login
+🎯 Objetivo:
+
+Criar um app onde o usuário:
+
+faz login/cadastro simples (sem segurança avançada ainda),
+
+pode criar, listar, editar e apagar anotações (tipo um bloco de notas online).
+
+🧩 Tecnologias que tu vai usar
+
+Frontend: HTML, CSS e JavaScript
+
+Backend: Node.js + Express
+
+Banco: MySQL
+
+Ferramentas que tu já domina: fetch(), async/await, req.body, cors(), express.json()
+
+🚀 O que tu vai revisar e evoluir
+Parte	O que tu vai treinar	Nível
+Frontend	Manipulação do DOM, formulários, requisições fetch	Reforçar base
+Backend	Rotas POST/GET/PUT/DELETE, conexão com banco	Intermediário
+Banco	INSERT, SELECT, UPDATE, DELETE	Prático
+Organização	Separar código em módulos (routes, controllers, etc.)	Novo aprendizado
+Lógica	Controle de fluxo, validações e async	Reforçar
+📋 Funcionalidades básicas
+
+Tela de login e cadastro
+
+Usuário digita nome e senha (sem criptografia, só pra treinar)
+
+Cadastra no banco de dados (INSERT)
+
+Faz login (SELECT)
+
+Tela de anotações
+
+Mostra todas as anotações do usuário (GET)
+
+Adiciona uma nova (POST)
+
+Edita uma anotação (PUT)
+
+Exclui uma anotação (DELETE)
+
+-------------------------------
+
+DIA A DIA: SABADO
+
+* FAZER A PARTE DO BACK CONECTANDO A FUNÇÕES COM O BANCO DE DADOS.
+* CRIAR TABELA NO BANCO PARA GUARAR AS ANOTAÇÕES.
+*
+
+IDEIA DE PROJETO:
+
+* FAZER UM SITE TIPO UM APLICATIVO DE FAZER ANOTAÇOES QUE TEM PAGINA DE LOGIN COM NOME E SENHA E DEPOIS UMA PAGINA COM BLOCOS QUE O USUARIO PODE CRIAR QUANTOS ELE QUISER E DENTRO TE CADA BLOCO ELE PODE FAZER SUAS ANOTAÇOES.

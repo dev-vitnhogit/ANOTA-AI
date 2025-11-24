@@ -1,0 +1,23 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: coral;
+}
+
+#menu-config > ul {
+    display: flex;
+    list-style: none;
+}
+
+#menu-config  li  a{
+    text-decoration: none;
+    color: white;
+    margin: 0px 10px;
+}
