@@ -51,7 +51,7 @@ async function criarBloco(){
     area_input.style.display = 'none'
     
     // REQUISIÇÃO PARA O BACK PARA SALVAR O NOME DO BLOCO
-    const res = fetch('http://localhost:8001/bloco',{
+    const res = await fetch('http://localhost:8001/bloco',{
       method:'POST',
       headers:{'Content-type':'application/json'},
       body:JSON.stringify({nome:titulo})
@@ -70,3 +70,9 @@ function deletar(event){
    const bloco = event.target.closest('.bloco');
    bloco.remove()
 };
+
+// REQUISÇÃO PARA MOSTRAR BLOCOS QUANDO CLIENTE ENTRA NA PAGINA.
+async function mostrarBloco(){
+   const res = await fetch('http://localhost:8001/bloco')
+   const blocos = await res.json()
+}

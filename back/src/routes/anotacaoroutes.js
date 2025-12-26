@@ -16,7 +16,7 @@ router.post('/login',verificadorLogin)
 // IMPORTS DA PÁGINA INDEX ANOTAÇAO
 import { guardaBloco } from '../controllers/anotacaocontroller.js';
 
-router.post('bloco',guardaBloco)
+router.post('/bloco',guardaBloco)
 
 
 export default router;

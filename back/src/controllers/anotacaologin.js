@@ -5,10 +5,16 @@ export async function enviarDados(req,res) {
     try{
     const db = await conectarLogin();
     const {usuario,password} = req.body;
+    const [nomeigual] = await db.query('SELECT id,nome FROM usuarios WHERE nome =?',[usuario])
 
-    const [result] = await db.query('INSERT INTO usuarios (nome,senha) VALUES (?,?)',[usuario,password])
+    if(nomeigual.length > 0){
+        return res.json({msgerro:'trocar nome'})
+    }else{
+
+    const [result] = await db.query('INSERT INTO usuarios (nome,senha) VALUES (?,?)',[usuario, password])
     
-    res.json(result)
+    res.json({result,msgsuscesso:'pode entrar'})
+    }
     
     }catch(erro){
         console.log('erro na rota POST...',erro)
@@ -18,7 +24,7 @@ export async function enviarDados(req,res) {
 
 // ROTA POST PÁGINA DE LOGIN ENTRAR
 
-export async function verificadorLogin(req,res) {
+export async function verificadorLogin(req,res){
     try{
     const db = await conectarLogin();
     const {usuario,password} = req.body
@@ -33,7 +39,6 @@ export async function verificadorLogin(req,res) {
     }else{
         res.json({msg:'nao foi encontrado'})
     }
-
     }catch(erro){
         console.log('erro na rota post da pagina de login entrar',erro)
     }

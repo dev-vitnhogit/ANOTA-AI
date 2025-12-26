@@ -1,4 +1,4 @@
-
+// MANIPULAÇÃO DO DOM
 const usuario = document.getElementById('nome');
 const password = document.getElementById('senha');
 const btn_entra = document.getElementById('btn-entra');
@@ -15,7 +15,7 @@ async function enviarVerficador() {
 
     const dados = await res.json()
     if(dados.sucesso){
-        alert('bem vindo')
+        alert(`${dados.sucesso}`)
         window.location.href = 'indexanotacao.html'
     }else{
         alert(dados.msg)

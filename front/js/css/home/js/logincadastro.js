@@ -16,8 +16,13 @@ async function recebeDados(event){
         headers:{'Content-Type':'application/json'},
         body:JSON.stringify({usuario: usuario.value,password: password.value})
     });
-         const resultado = await res.json()
-         alert('pode entrar')
+        const resultado = await res.json()
+
+     if(resultado.msgerro){
+        alert(`${resultado.msgerro}`)
+     }else{
+        alert(`${resultado.msgsuscesso}`)
+     }
     }catch(erro){
         console.log('erro na requisao post front...',erro)
     }
