@@ -27,8 +27,26 @@ header{
     text-transform: capitalize;
 }
 
+main{
+    position: relative;
+}
+
 #areatexto{
     outline: none;
+}
+
+#area-btn-salvar{
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+}
+
+#btn-salvar{
+    border: none;
+    background-color: coral;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px black
 }
 
 /* CLASS ADD PELO JS PARA MUDAR DE TEMA */

@@ -55,3 +55,18 @@ DIA A DIA: SEXTA
 IDEIA DE PROJETO:
 
 * FAZER UM SITE TIPO UM APLICATIVO DE FAZER ANOTAÇOES QUE TEM PAGINA DE LOGIN COM NOME E SENHA E DEPOIS UMA PAGINA COM BLOCOS QUE O USUARIO PODE CRIAR QUANTOS ELE QUISER E DENTRO TE CADA BLOCO ELE PODE FAZER SUAS ANOTAÇOES.
+
+
+fazer o sistema salvao o nome do bloco criado e salva as ANOTAÇOES.
+
+logica:
+
+Usuário entra → banco retorna id.
+
+Front guarda o id (localStorage).
+
+Usuário cria bloco → envia o id junto pro back.
+
+Back salva o bloco com id_user.
+
+Usuário vê blocos → back busca blocos usando o id.

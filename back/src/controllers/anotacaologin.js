@@ -1,9 +1,9 @@
-import conectarLogin from "../db/dblogin.js"
+import conectar from "../db/anotacaodb.js"
 
 // ROTA POST PÁGINA DE CADASTRO
 export async function enviarDados(req,res) {
     try{
-    const db = await conectarLogin();
+    const db = await conectar();
     const {usuario,password} = req.body;
     const [nomeigual] = await db.query('SELECT id,nome FROM usuarios WHERE nome =?',[usuario])
 
@@ -23,10 +23,9 @@ export async function enviarDados(req,res) {
 };
 
 // ROTA POST PÁGINA DE LOGIN ENTRAR
-
 export async function verificadorLogin(req,res){
     try{
-    const db = await conectarLogin();
+    const db = await conectar();
     const {usuario,password} = req.body
 
     const [result] = await db.query('SELECT * FROM usuarios WHERE nome = ? AND senha = ?',[usuario,password])
@@ -44,3 +43,4 @@ export async function verificadorLogin(req,res){
     }
     
 };
+

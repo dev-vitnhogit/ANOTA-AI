@@ -2,7 +2,7 @@
 const btn_Addbloco = document.getElementById('btn-addbloco');
 const area_Bloco = document.getElementById('area-bloco');
 
-// AREA DO FORMULARIO.
+// AREA DO FORMULARIO
 const area_input = document.getElementById('area-input');
 const btn_criar = document.getElementById('btn-criarbloco');
 const titulo_bloco = document.getElementById('input-titulo');
